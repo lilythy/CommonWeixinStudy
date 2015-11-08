@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>GetMsgAction</servlet-name>
+    <servlet-class>com.wxcommon.servlet.GetMsgActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMsgAction</servlet-name>
+    <url-pattern>/servlet/GetMsgAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminDataAction</servlet-name>
+    <servlet-class>com.wxcommon.servlet.AdminDataActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDataAction</servlet-name>
+    <url-pattern>/servlet/AdminDataAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.wxcommon.servlet.LoginActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/servlet/LoginAction</url-pattern>
+  </servlet-mapping> 
+  
+  <welcome-file-list>
+    <welcome-file>/index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
